@@ -1,0 +1,78 @@
+Dotfuscator Professional Edition Version 4.10.2.2252 Build machine license. 
+Copyright 2002-2013 PreEmptive Solutions, LLC All Rights Reserved.
+
+Use of this software implies acceptance of accompanying license agreement.
+LICENSED TO: Danny Su
+SERIAL #: 1032-PRO-8E55B580-4489AB66-3412B76A-C2B22412
+
+Usage: dotfuscator [options] [config_file]
+
+Option:
+	/g		     : start GUI
+	/i		     : investigate only
+	/p=<property list>   : specifies values for user defined properties in config file. Comma separated list of name-value pairs:
+                              (eg:  /p=projectdir=c:\temp,projectname=MyApp)
+	/q		     : quiet
+	/nologo		     : suppress copyright and licensing information
+	/v		     : verbose
+	/c=<culture>         : set user interface language (requires appropriate language resources). Argument is the lowercase language code:
+                              (eg:  /c=de, /c=ja, /c=zh-CHS)
+	/?		     : print this message
+	[config_file]        : configuration file containing runtime options
+
+Extended Options:
+	/in:[+|-]<file>[,[+|-]<file>]		     : specify input assemblies. Use prefix to obfuscate input as public(+) or private(-) assembly, use : after the filename to specify a package type
+
+	Available Package Types
+
+	Directory
+	Appx
+	ClickOnce
+	Silverlight
+
+	/out: <directory>		     : specify output directory
+	/honor:[on*|off]		     : toggle honoring obfuscation attribute directives found in all input assemblies
+	/strip:[on*|off]		     : toggle stripping obfuscation attributes from all input assemblies
+	/smart:[on*|off]		     : automatically handle program elements deemed required for correct output program behavior
+	/soreport:[all*|warn|none]	     : specify smart obfuscation report verbosity
+	/makeconfig:<file>		     : save command line options to config file
+	/disable		             : disable all transformations (short for "-rena:off -prune:off -encr:off -cont:off -link:off") and instrumentation
+	/offlineactivation:<activation_file> : manually activate Dotfuscator with the data contained within <activation_file>
+
+Extended Options (Professional Edition Only):
+	/debu:[on|off*]		     : emit debugging symbols for obfuscated assemblies
+	/suppress:[on|off*]		     : add the SuppressIldasmAttribute to supported output assemblies
+
+Extended Renaming Options:
+	/rename:[on*:off]		     : enable/disable renaming
+	/mapout:<file>		     : specify output mapping file
+	/clobbermap:[on|off*]		     : specify map overwrite mode
+	/keep:[namespace|hierarchy|none*]		     : specify type renaming scheme
+
+Extended Renaming Options (Professional Edition Only):
+	/naming:[loweralpha*|upperalpha|numeric|unprintable]		     : specify identifier renaming scheme
+	/pref:[on|off*]		     : append prefix to renamed types
+	/mapin:<file>		     : specify input mapping file
+	/enhancedOI:[on|off*]		     : use Enhanced Overload Induction(TM)
+	/refsrename:[on*|off]		     : rename referenced metadata defined only in input map file
+
+Extended Control Flow Options (Professional Edition Only):
+	/controlflow:[high*|medium|low|off]		     : set control flow level
+
+Extended String Encryption Options (Professional Edition Only):
+	/encrypt:[on*|off]		     : enable/disable string encryption
+
+Extended Pruning Options (Professional Edition Only):
+	/prune:[on*|off]		     : enable/disable pruning
+
+Extended Linking Options (Professional Edition Only):
+	/link:[[+]<name>[,[+]<name>],]out=<name>		     : specify assemblies to link into named output assembly. '+' indicates prime assembly. Omit the list to link all inputs, using first as prime.
+
+Extended Watermarking Options (Professional Edition Only):
+	/premark:[on|off*|only]		     : enable/disable watermarking. "Only" option disables all other transforms.
+	/watermark:<string>		     : specify string to use for watermark. Quotes are optional. By default, all input assemblies will be watermarked.
+	/passphrase:<passphrase>		     : optionally specify a passphrase to use for encrypting the string.
+	/charmap:<name>		     : specify a character set to use
+
+Option key is '-' or '/', extended options are recognized by first 4 characters.
+Extended options override options in the config file, except for input files which are merged.

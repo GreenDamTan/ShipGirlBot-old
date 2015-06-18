@@ -1,0 +1,6 @@
+C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\bin\Debug\JsonConfig.dll
+C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\bin\Debug\JsonConfig.pdb
+C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\bin\Debug\JsonFx.Json.dll
+C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\obj\Debug\JsonConfig.csprojResolveAssemblyReference.cache
+C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\obj\Debug\JsonConfig.dll
+C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\obj\Debug\JsonConfig.pdb
