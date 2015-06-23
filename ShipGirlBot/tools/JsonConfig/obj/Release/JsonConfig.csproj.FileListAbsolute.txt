@@ -1,6 +1,0 @@
-C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\bin\Release\JsonConfig.dll
-C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\bin\Release\JsonConfig.pdb
-C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\bin\Release\JsonFx.Json.dll
-C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\obj\Release\JsonConfig.dll
-C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\obj\Release\JsonConfig.pdb
-C:\work\ship\bot\ShipGirlBot\ShipGirlBot\tools\JsonConfig\obj\Release\JsonConfig.csprojResolveAssemblyReference.cache

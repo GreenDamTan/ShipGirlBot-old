@@ -1,9 +1,0 @@
-# bin folder
-bin/
-*.dll
-*.mdb
-*.exe
-
-# OS X files
-.DS_Store
-.AppleDouble

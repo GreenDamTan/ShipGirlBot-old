@@ -1,4 +1,0 @@
-﻿internal class GetPVPWarResultResponse : GetBattleResultResponse
-{
-}
-
