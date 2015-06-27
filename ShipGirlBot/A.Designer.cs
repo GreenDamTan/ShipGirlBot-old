@@ -27,28 +27,30 @@ partial class A
     /// </summary>
     private void InitializeComponent()
     {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(837, 583);
-            this.textBox1.TabIndex = 0;
-            // 
-            // A
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 583);
-            this.Controls.Add(this.textBox1);
-            this.Name = "A";
-            this.Text = "更新日志";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+        this.textBox1 = new System.Windows.Forms.TextBox();
+        this.SuspendLayout();
+        // 
+        // textBox1
+        // 
+        this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+        this.textBox1.Location = new System.Drawing.Point(0, 0);
+        this.textBox1.Multiline = true;
+        this.textBox1.Name = "textBox1";
+        this.textBox1.Size = new System.Drawing.Size(837, 583);
+        this.textBox1.TabIndex = 0;
+        // 
+        // A
+        // 
+        this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+        this.AutoScroll = true;
+        this.AutoSize = true;
+        this.ClientSize = new System.Drawing.Size(837, 583);
+        this.Controls.Add(this.textBox1);
+        this.Name = "A";
+        this.Text = "更新日志";
+        this.ResumeLayout(false);
+        this.PerformLayout();
 
     }
 

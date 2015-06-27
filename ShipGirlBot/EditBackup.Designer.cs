@@ -26,13 +26,13 @@
     /// </summary>
     private void InitializeComponent()
     {
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn8 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn9 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn10 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn11 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn12 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn13 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
-        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn14 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn1 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn2 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn3 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn4 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn5 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn6 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
+        DevComponents.DotNetBar.SuperGrid.GridColumn gridColumn7 = new DevComponents.DotNetBar.SuperGrid.GridColumn();
         this.dislist = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
         this.button1 = new System.Windows.Forms.Button();
         this.integerInput1 = new DevComponents.Editors.IntegerInput();
@@ -45,33 +45,33 @@
         this.dislist.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
         this.dislist.Location = new System.Drawing.Point(0, 0);
         this.dislist.Name = "dislist";
-        gridColumn8.Name = "";
-        gridColumn9.HeaderText = "星级";
-        gridColumn9.Name = "";
-        gridColumn9.Width = 80;
-        gridColumn10.HeaderText = "类型";
-        gridColumn10.Name = "";
-        gridColumn10.Width = 30;
-        gridColumn11.HeaderText = "名称";
-        gridColumn11.Name = "";
-        gridColumn11.Width = 80;
-        gridColumn12.EditorType = typeof(DevComponents.DotNetBar.SuperGrid.GridImageEditControl);
-        gridColumn12.HeaderText = "头像";
-        gridColumn12.Name = "";
-        gridColumn12.Width = 220;
-        gridColumn13.HeaderText = "移除";
-        gridColumn13.Name = "";
-        gridColumn13.Width = 50;
-        gridColumn14.HeaderText = "id";
-        gridColumn14.Name = "";
-        gridColumn14.Width = 50;
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn8);
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn9);
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn10);
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn11);
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn12);
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn13);
-        this.dislist.PrimaryGrid.Columns.Add(gridColumn14);
+        gridColumn1.Name = "";
+        gridColumn2.HeaderText = "星级";
+        gridColumn2.Name = "";
+        gridColumn2.Width = 80;
+        gridColumn3.HeaderText = "类型";
+        gridColumn3.Name = "";
+        gridColumn3.Width = 30;
+        gridColumn4.HeaderText = "名称";
+        gridColumn4.Name = "";
+        gridColumn4.Width = 80;
+        gridColumn5.EditorType = typeof(DevComponents.DotNetBar.SuperGrid.GridImageEditControl);
+        gridColumn5.HeaderText = "头像";
+        gridColumn5.Name = "";
+        gridColumn5.Width = 220;
+        gridColumn6.HeaderText = "移除";
+        gridColumn6.Name = "";
+        gridColumn6.Width = 50;
+        gridColumn7.HeaderText = "id";
+        gridColumn7.Name = "";
+        gridColumn7.Width = 50;
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn1);
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn2);
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn3);
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn4);
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn5);
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn6);
+        this.dislist.PrimaryGrid.Columns.Add(gridColumn7);
         this.dislist.PrimaryGrid.MultiSelect = false;
         this.dislist.PrimaryGrid.SelectionGranularity = DevComponents.DotNetBar.SuperGrid.SelectionGranularity.Row;
         this.dislist.Size = new System.Drawing.Size(684, 625);
@@ -99,18 +99,20 @@
         this.integerInput1.Location = new System.Drawing.Point(728, 108);
         this.integerInput1.Name = "integerInput1";
         this.integerInput1.ShowUpDown = true;
-        this.integerInput1.Size = new System.Drawing.Size(80, 21);
         this.integerInput1.TabIndex = 15;
         // 
-        // Form1
+        // EditBackup
         // 
-        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(1216, 625);
+        this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+        this.AutoScroll = true;
+        this.AutoSize = true;
+        this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+        this.ClientSize = new System.Drawing.Size(1028, 625);
         this.Controls.Add(this.integerInput1);
         this.Controls.Add(this.button1);
         this.Controls.Add(this.dislist);
-        this.Name = "Form1";
+        this.Name = "EditBackup";
         this.Text = "Form1";
         ((System.ComponentModel.ISupportInitialize)(this.integerInput1)).EndInit();
         this.ResumeLayout(false);

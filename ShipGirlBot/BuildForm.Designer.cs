@@ -276,9 +276,11 @@ partial class BuildForm
         // 
         // BuildForm
         // 
-        this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(1151, 719);
+        this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+        this.AutoScroll = true;
+        this.AutoSize = true;
+        this.ClientSize = new System.Drawing.Size(1028, 719);
         this.Controls.Add(this.v3);
         this.Controls.Add(this.v2);
         this.Controls.Add(this.v1);

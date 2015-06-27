@@ -152,6 +152,7 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.buildlist = new DevComponents.DotNetBar.SuperGrid.SuperGridControl();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.buildanalyzebtn = new System.Windows.Forms.Button();
             this.dropanalyze = new System.Windows.Forms.Button();
             this.choosedisequiplist = new System.Windows.Forms.Button();
@@ -177,7 +178,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.logger = new System.Windows.Forms.TextBox();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
-            this.button8 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.darkforgetotalshipnum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.battledelayinput)).BeginInit();
@@ -221,7 +221,7 @@
             this.groupBox1.Controls.Add(this.namelvlabel);
             this.groupBox1.Location = new System.Drawing.Point(389, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(226, 282);
+            this.groupBox1.Size = new System.Drawing.Size(174, 282);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "提督信息";
@@ -391,7 +391,7 @@
             // autobuildcheck
             // 
             this.autobuildcheck.AutoSize = true;
-            this.autobuildcheck.Location = new System.Drawing.Point(408, 16);
+            this.autobuildcheck.Location = new System.Drawing.Point(317, 7);
             this.autobuildcheck.Name = "autobuildcheck";
             this.autobuildcheck.Size = new System.Drawing.Size(72, 16);
             this.autobuildcheck.TabIndex = 48;
@@ -401,7 +401,7 @@
             // autodevcheck
             // 
             this.autodevcheck.AutoSize = true;
-            this.autodevcheck.Location = new System.Drawing.Point(408, 35);
+            this.autodevcheck.Location = new System.Drawing.Point(395, 7);
             this.autodevcheck.Name = "autodevcheck";
             this.autodevcheck.Size = new System.Drawing.Size(72, 16);
             this.autodevcheck.TabIndex = 47;
@@ -418,7 +418,7 @@
             // darkforge
             // 
             this.darkforge.AutoSize = true;
-            this.darkforge.Location = new System.Drawing.Point(336, 265);
+            this.darkforge.Location = new System.Drawing.Point(220, 245);
             this.darkforge.Name = "darkforge";
             this.darkforge.Size = new System.Drawing.Size(108, 16);
             this.darkforge.TabIndex = 24;
@@ -479,7 +479,7 @@
             this.battledelayinput.ShowUpDown = true;
             this.battledelayinput.Size = new System.Drawing.Size(50, 21);
             this.battledelayinput.TabIndex = 18;
-            this.battledelayinput.Value = 2;
+            this.battledelayinput.Value = 60;
             // 
             // autorepaircheck
             // 
@@ -720,7 +720,7 @@
             this.shiplist.PrimaryGrid.Columns.Add(gridColumn11);
             this.shiplist.PrimaryGrid.Columns.Add(gridColumn12);
             this.shiplist.PrimaryGrid.SortLevel = DevComponents.DotNetBar.SuperGrid.SortLevel.None;
-            this.shiplist.Size = new System.Drawing.Size(1162, 168);
+            this.shiplist.Size = new System.Drawing.Size(1028, 168);
             this.shiplist.TabIndex = 4;
             this.shiplist.Text = "superGridControl1";
             this.shiplist.CellClick += new System.EventHandler<DevComponents.DotNetBar.SuperGrid.GridCellClickEventArgs>(this.shiplist_CellClick);
@@ -748,6 +748,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.AutoSize = true;
             this.groupBox4.Controls.Add(this.autodevnum);
             this.groupBox4.Controls.Add(this.autobuildcheck);
             this.groupBox4.Controls.Add(this.label17);
@@ -809,9 +810,9 @@
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Controls.Add(this.nightwarcheck);
             this.groupBox4.Controls.Add(this.formationcombo);
-            this.groupBox4.Location = new System.Drawing.Point(615, 28);
+            this.groupBox4.Location = new System.Drawing.Point(561, 28);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(544, 281);
+            this.groupBox4.Size = new System.Drawing.Size(598, 296);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "远征/战斗控制";
@@ -1330,7 +1331,7 @@
             this.battleresultdelayinput.ShowUpDown = true;
             this.battleresultdelayinput.Size = new System.Drawing.Size(50, 21);
             this.battleresultdelayinput.TabIndex = 20;
-            this.battleresultdelayinput.Value = 4;
+            this.battleresultdelayinput.Value = 60;
             // 
             // battlewaitlistlabel
             // 
@@ -1354,7 +1355,7 @@
             this.battlenodenuminput.ShowUpDown = true;
             this.battlenodenuminput.Size = new System.Drawing.Size(50, 21);
             this.battlenodenuminput.TabIndex = 22;
-            this.battlenodenuminput.Value = 1;
+            this.battlenodenuminput.Value = 10;
             // 
             // waitforrepairelabel
             // 
@@ -1454,8 +1455,9 @@
             // 
             // buildlist
             // 
+            this.buildlist.Dock = System.Windows.Forms.DockStyle.Left;
             this.buildlist.FilterExprColors.SysFunction = System.Drawing.Color.DarkRed;
-            this.buildlist.Location = new System.Drawing.Point(6, 20);
+            this.buildlist.Location = new System.Drawing.Point(3, 17);
             this.buildlist.Name = "buildlist";
             gridColumn17.HeaderText = "id";
             gridColumn17.Name = "";
@@ -1481,7 +1483,7 @@
             this.buildlist.PrimaryGrid.Columns.Add(gridColumn20);
             this.buildlist.PrimaryGrid.Columns.Add(gridColumn21);
             this.buildlist.PrimaryGrid.SortLevel = DevComponents.DotNetBar.SuperGrid.SortLevel.None;
-            this.buildlist.Size = new System.Drawing.Size(573, 162);
+            this.buildlist.Size = new System.Drawing.Size(445, 167);
             this.buildlist.TabIndex = 5;
             this.buildlist.Text = "superGridControl1";
             // 
@@ -1508,6 +1510,16 @@
             this.groupBox7.TabIndex = 13;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "其他指令";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(323, 52);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(46, 44);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "攻略";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // buildanalyzebtn
             // 
@@ -1667,7 +1679,7 @@
             this.expandablePanel1.ExpandOnTitleClick = true;
             this.expandablePanel1.Location = new System.Drawing.Point(0, 0);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(1162, 218);
+            this.expandablePanel1.Size = new System.Drawing.Size(1028, 218);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1700,7 +1712,7 @@
             this.expandablePanel2.ExpandOnTitleClick = true;
             this.expandablePanel2.Location = new System.Drawing.Point(0, 218);
             this.expandablePanel2.Name = "expandablePanel2";
-            this.expandablePanel2.Size = new System.Drawing.Size(1162, 194);
+            this.expandablePanel2.Size = new System.Drawing.Size(1028, 194);
             this.expandablePanel2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1762,18 +1774,19 @@
             // 
             // expandablePanel3
             // 
+            this.expandablePanel3.AutoSize = true;
             this.expandablePanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.expandablePanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.expandablePanel3.Controls.Add(this.groupBox5);
             this.expandablePanel3.Controls.Add(this.groupBox1);
-            this.expandablePanel3.Controls.Add(this.groupBox4);
             this.expandablePanel3.Controls.Add(this.groupBox7);
+            this.expandablePanel3.Controls.Add(this.groupBox4);
             this.expandablePanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.expandablePanel3.ExpandOnTitleClick = true;
             this.expandablePanel3.HideControlsWhenCollapsed = true;
             this.expandablePanel3.Location = new System.Drawing.Point(0, 412);
             this.expandablePanel3.Name = "expandablePanel3";
-            this.expandablePanel3.Size = new System.Drawing.Size(1162, 310);
+            this.expandablePanel3.Size = new System.Drawing.Size(1028, 327);
             this.expandablePanel3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1801,9 +1814,9 @@
             this.expandablePanel4.Controls.Add(this.logger);
             this.expandablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.expandablePanel4.ExpandOnTitleClick = true;
-            this.expandablePanel4.Location = new System.Drawing.Point(0, 722);
+            this.expandablePanel4.Location = new System.Drawing.Point(0, 739);
             this.expandablePanel4.Name = "expandablePanel4";
-            this.expandablePanel4.Size = new System.Drawing.Size(1162, 254);
+            this.expandablePanel4.Size = new System.Drawing.Size(1028, 14);
             this.expandablePanel4.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel4.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel4.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -1840,7 +1853,7 @@
             this.logger.Multiline = true;
             this.logger.Name = "logger";
             this.logger.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.logger.Size = new System.Drawing.Size(1162, 228);
+            this.logger.Size = new System.Drawing.Size(1028, 0);
             this.logger.TabIndex = 1;
             this.logger.Text = "少女自动诱导器初始化完毕....";
             // 
@@ -1849,22 +1862,12 @@
             this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2007Silver;
             this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(323, 52);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(46, 44);
-            this.button8.TabIndex = 22;
-            this.button8.Text = "攻略";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // z
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1162, 976);
+            this.ClientSize = new System.Drawing.Size(1028, 753);
             this.Controls.Add(this.expandablePanel4);
             this.Controls.Add(this.expandablePanel3);
             this.Controls.Add(this.expandablePanel2);
@@ -1894,9 +1897,11 @@
             this.expandablePanel1.ResumeLayout(false);
             this.expandablePanel2.ResumeLayout(false);
             this.expandablePanel3.ResumeLayout(false);
+            this.expandablePanel3.PerformLayout();
             this.expandablePanel4.ResumeLayout(false);
             this.expandablePanel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
